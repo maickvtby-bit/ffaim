@@ -96,7 +96,9 @@ object AntiBan {
 
     fun jitter(base: Long): Long {
         val d = (base * 0.3).toLong()
-        return base + rng.nextLong(-d, d + 1)
+        if (d <= 0) return base
+        val offset = (rng.nextLong() % (2 * d + 1)) - d
+        return base + offset
     }
 
     fun scrub(ctx: Context) {
