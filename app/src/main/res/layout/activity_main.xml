@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FF Aim Assist + AntiBan — JBtoAI"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:paddingBottom="16dp"/>
+
+    <Button android:id="@+id/btnOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Cấp quyền overlay"/>
+
+    <Button android:id="@+id/btnScan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2. Quét anti-ban"/>
+
+    <Button android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3. Bật aim assist + watcher"/>
+
+    <Button android:id="@+id/btnStop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tắt"/>
+
+    <TextView android:id="@+id/txtScan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="#11000000"
+        android:textSize="14sp"/>
+
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crosshair size"/>
+    <SeekBar android:id="@+id/seekCross"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="200"/>
+
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alpha"/>
+    <SeekBar android:id="@+id/seekAlpha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="255"/>
+
+    <Switch android:id="@+id/swAutoHide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Auto-hide khi FF background"
+        android:paddingTop="12dp"/>
+
+    <Switch android:id="@+id/swFps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hiện FPS overlay"/>
+
+    <TextView android:id="@+id/txtInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="24dp"
+        android:textSize="13sp"/>
+</LinearLayout>
+</ScrollView>
